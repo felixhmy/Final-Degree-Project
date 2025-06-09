@@ -2,4 +2,4 @@
 
 All rights reserved.
 
-This source code is only allowed to be viewed for informational and reference purposes. No se otorga permiso para copiar, distribuir, modificar o utilizar este código de ninguna forma sin el consentimiento previo y por escrito del titular de los derechos de autor.
+This source code is only allowed to be viewed for informational and reference purposes. Permission is not granted to copy, distribute, modify, or use this code in any way without the prior written consent of the copyright holder.
