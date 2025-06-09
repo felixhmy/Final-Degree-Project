@@ -1,0 +1,24 @@
+[bootstrap]
+main_collection = /main/main.collectionc
+
+[script]
+shared_state = 1
+
+[display]
+width = 960
+height = 640
+
+[android]
+input_method = HiddenInputField
+
+[project]
+title = Defold - Felix Hernandez Muñoz-Yusta
+compress_archive = 0
+
+[sprite]
+subpixels = 1
+
+[graphics]
+default_texture_min_filter = nearest
+default_texture_mag_filter = nearest
+

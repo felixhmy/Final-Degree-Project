@@ -1,0 +1,10 @@
+default_animation: "player_idle"
+material: "/builtins/materials/sprite.material"
+size {
+  x: 30.0
+  y: 38.0
+}
+textures {
+  sampler: "texture_sampler"
+  texture: "/main/sources/player_anim.atlas"
+}

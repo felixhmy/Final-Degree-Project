@@ -1,0 +1,87 @@
+animations {
+  id: "player_idle"
+  images {
+    image: "/media/library/player/idle_spritesheet/idle_07.png"
+  }
+  images {
+    image: "/media/library/player/idle_spritesheet/idle_12.png"
+  }
+  images {
+    image: "/media/library/player/idle_spritesheet/idle_08.png"
+  }
+  images {
+    image: "/media/library/player/idle_spritesheet/idle_04.png"
+  }
+  images {
+    image: "/media/library/player/idle_spritesheet/idle_01.png"
+  }
+  images {
+    image: "/media/library/player/idle_spritesheet/idle_10.png"
+  }
+  images {
+    image: "/media/library/player/idle_spritesheet/idle_11.png"
+  }
+  images {
+    image: "/media/library/player/idle_spritesheet/idle_05.png"
+  }
+  images {
+    image: "/media/library/player/idle_spritesheet/idle_03.png"
+  }
+  images {
+    image: "/media/library/player/idle_spritesheet/idle_02.png"
+  }
+  images {
+    image: "/media/library/player/idle_spritesheet/idle_09.png"
+  }
+  images {
+    image: "/media/library/player/idle_spritesheet/idle_06.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 12
+}
+animations {
+  id: "player_run"
+  images {
+    image: "/media/library/player/run_spritesheet/run_01.png"
+  }
+  images {
+    image: "/media/library/player/run_spritesheet/run_02.png"
+  }
+  images {
+    image: "/media/library/player/run_spritesheet/run_03.png"
+  }
+  images {
+    image: "/media/library/player/run_spritesheet/run_04.png"
+  }
+  images {
+    image: "/media/library/player/run_spritesheet/run_05.png"
+  }
+  images {
+    image: "/media/library/player/run_spritesheet/run_06.png"
+  }
+  images {
+    image: "/media/library/player/run_spritesheet/run_07.png"
+  }
+  images {
+    image: "/media/library/player/run_spritesheet/run_08.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 12
+}
+animations {
+  id: "player_jump"
+  images {
+    image: "/media/library/player/jump.png"
+  }
+  playback: PLAYBACK_NONE
+  fps: 1
+}
+animations {
+  id: "player_land"
+  images {
+    image: "/media/library/player/landing.png"
+  }
+  playback: PLAYBACK_NONE
+  fps: 1
+}
+extrude_borders: 2

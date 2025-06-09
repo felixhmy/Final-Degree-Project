@@ -1,0 +1,64 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/idle_spritesheet.png",
+                "frameConfig": {
+                    "frameWidth": 25,
+                    "frameHeight": 35,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "idle_spritesheet"
+            },
+            {
+                "url": "assets/jump.png",
+                "type": "image",
+                "key": "jump"
+            },
+            {
+                "url": "assets/landing.png",
+                "type": "image",
+                "key": "landing"
+            },
+            {
+                "url": "assets/Map.json",
+                "type": "tilemapTiledJSON",
+                "key": "Map"
+            },
+            {
+                "url": "assets/player_animations.json",
+                "type": "animation",
+                "key": "player_animations"
+            },
+            {
+                "url": "assets/run_spritesheet.png",
+                "frameConfig": {
+                    "frameWidth": 27,
+                    "frameHeight": 38,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "run_spritesheet"
+            },
+            {
+                "url": "assets/terrain.png",
+                "type": "image",
+                "key": "tileset"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}

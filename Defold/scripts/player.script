@@ -1,0 +1,70 @@
+-- Realizado por: Félix Hernández Muñoz-Yusta
+
+local GRAVITY = -500
+local MAX_GROUND_SPEED = 100
+local JUMP_TAKEOFF_SPEED = 240
+
+function init(self)
+	msg.post("#", "acquire_input_focus")
+
+	self.velocity = vmath.vector3(0, 0, 0)
+	self.ground_contact = false
+	self.direction = 1
+end
+
+local function clamp(v, min, max)
+	if v < min then return min
+	elseif v > max then return max
+	else return v end
+end
+
+local function update_position(self, dt)
+	-- Aplica gravedad al jugador
+	self.velocity.y = self.velocity.y + GRAVITY * dt
+
+	-- Limita la velocidad de caída
+	self.velocity.y = clamp(self.velocity.y, -500, 500)
+
+	-- Actualiza la posición del jugador
+	local pos = go.get_position()
+	pos = pos + self.velocity * dt
+	go.set_position(pos)
+
+	-- Verifica colisiones con el suelo
+	if pos.y <= 0 then -- Suponiendo que el suelo está en y=0
+		pos.y = 0
+		self.velocity.y = 0
+		self.ground_contact = true
+	else
+		self.ground_contact = false
+	end
+
+	go.set_position(pos)
+end
+
+function on_input(self, action_id, action)
+	local dt = 1 / 60 -- Suponiendo una tasa de actualización de 60 FPS
+
+	if action.pressed then
+		sprite.play_flipbook("#sprite", "player_run")
+	elseif action.released then
+		sprite.play_flipbook("#sprite", "player_idle")
+	end
+
+	if action_id == hash("right") then
+		self.direction = 1
+		self.velocity.x = MAX_GROUND_SPEED
+		sprite.set_hflip("#sprite", false)
+	elseif action_id == hash("left") then
+		self.direction = -1
+		self.velocity.x = -MAX_GROUND_SPEED
+		sprite.set_hflip("#sprite", true)
+	end
+
+	-- Manejo del salto
+	if action_id == hash("jump") and action.pressed and self.ground_contact then
+		self.velocity.y = JUMP_TAKEOFF_SPEED
+	end
+
+	update_position(self, dt)
+end

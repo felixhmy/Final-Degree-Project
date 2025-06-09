@@ -1,0 +1,105 @@
+{
+    "id": "01aefa93-6044-4159-8358-7e91310aa05f",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Level",
+        "borderWidth": 1280,
+        "borderHeight": 720
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "815e00cd-f4c3-4eb0-b4f8-6d969452659e",
+            "label": "background",
+            "texture": {
+                "key": "background"
+            },
+            "x": 613,
+            "y": 354,
+            "scaleX": 3,
+            "scaleY": 3
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "9600742a-4929-4a65-ba59-3756cca420a4",
+            "label": "tile",
+            "x": 224,
+            "y": 264,
+            "scaleX": 1.5,
+            "scaleY": 1.5,
+            "tilemapId": "ca649b06-e381-4b49-abfd-e675e3429ddc",
+            "layerName": "Tile Layer 1",
+            "tilesets": [
+                "terrain"
+            ]
+        },
+        {
+            "type": "Sprite",
+            "id": "11dfaa10-9692-4dc5-ad47-b4fe7e74f5a6",
+            "label": "player",
+            "texture": {
+                "key": "idle_spritesheet",
+                "frame": 0
+            },
+            "x": 262,
+            "y": 594,
+            "scaleX": 1.5,
+            "scaleY": 1.5,
+            "animationPlayMethod": 1,
+            "animationKey": "player_idle"
+        },
+        {
+            "type": "Text",
+            "id": "37f469cf-a009-498e-92ff-79d7eb78a9a8",
+            "label": "UI",
+            "x": 232,
+            "y": 82,
+            "text": "Movement: A, D, Space\nReset: R"
+        }
+    ],
+    "plainObjects": [
+        {
+            "id": "ca649b06-e381-4b49-abfd-e675e3429ddc",
+            "type": "Tilemap",
+            "label": "map",
+            "key": "Map",
+            "tilesets": [
+                {
+                    "name": "terrain",
+                    "imageKey": "tileset"
+                }
+            ]
+        },
+        {
+            "id": "d44f97cf-77ef-4828-9b79-2eb4fe8a966e",
+            "type": "Keyboard.Key",
+            "label": "Key_D",
+            "keyCode": "D"
+        },
+        {
+            "id": "04046243-3d8c-49b5-be03-e3be12e3f62b",
+            "type": "Keyboard.Key",
+            "label": "Key_A",
+            "keyCode": "A"
+        },
+        {
+            "id": "020e976e-d921-4016-8f45-dcbb68096b1b",
+            "type": "Keyboard.Key",
+            "label": "Key_R",
+            "keyCode": "R"
+        },
+        {
+            "id": "e0cdc102-f7d4-4d66-b1d5-1bbb8d9257f3",
+            "type": "Keyboard.Key",
+            "label": "Key_Space"
+        }
+    ],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

@@ -1,0 +1,157 @@
+[ {
+  "path" : "/<AnonymousRoot>",
+  "hexDigest" : null,
+  "children" : [ "/main/main.collectionc", "/builtins/render/default.renderc", "/input/game.input_bindingc", "/builtins/input/default.gamepadsc", "/builtins/render/default.display_profilesc", "/builtins/scripts/debugger.luac" ]
+}, {
+  "path" : "/main/main.collectionc",
+  "hexDigest" : "9cedf29592a571f2f59df54cb981ea83dbd25609",
+  "children" : [ "/_generated_2539dc438ccb1bd0.goc", "/_generated_f447c9f067854414.goc", "/_generated_8b59b8639b91869e.goc" ]
+}, {
+  "path" : "/_generated_2539dc438ccb1bd0.goc",
+  "hexDigest" : "6d307423a3b8fae37c8e4b123a668d25deb3dc73",
+  "children" : [ "/main/sources/map.tilemapc", "/_generated_a272e4b321689969.collisionobjectc" ]
+}, {
+  "path" : "/main/sources/map.tilemapc",
+  "hexDigest" : "6eb2d0f67fcd8cf7da7cf1847a255baaa26027dd",
+  "children" : [ "/main/sources/ground.t.texturesetc", "/builtins/materials/tile_map.materialc" ]
+}, {
+  "path" : "/main/sources/ground.t.texturesetc",
+  "hexDigest" : "1ca4aff8a012d92413df688ebdb16faceb7dc936",
+  "children" : [ "/main/sources/main/sources/__ground_tilesource.texturec" ]
+}, {
+  "path" : "/main/sources/main/sources/__ground_tilesource.texturec",
+  "hexDigest" : "f6396112ecaf858a65ed1eca17849abe1102d3ff",
+  "children" : [ ]
+}, {
+  "path" : "/builtins/materials/tile_map.materialc",
+  "hexDigest" : "e41b1939ab8f34f268e7eea9425a63f68b2b1fd6",
+  "children" : [ "/builtins/materials/tile_map.vpc", "/builtins/materials/tile_map.fpc" ]
+}, {
+  "path" : "/builtins/materials/tile_map.vpc",
+  "hexDigest" : "9006ee432995600a1420c99553c40439f2f43baa",
+  "children" : [ ]
+}, {
+  "path" : "/builtins/materials/tile_map.fpc",
+  "hexDigest" : "d5786f4e050ba5f1a2ed82523af756e10953e256",
+  "children" : [ ]
+}, {
+  "path" : "/_generated_a272e4b321689969.collisionobjectc",
+  "hexDigest" : "03747b3228d1cb1c148ed23b691d0e874df07559",
+  "children" : [ "/main/sources/map.tilemapc" ]
+}, {
+  "path" : "/_generated_f447c9f067854414.goc",
+  "hexDigest" : "9b5dd9b3e65210d8b9683788eb21e8e578b104bc",
+  "children" : [ "/scripts/player.scriptc", "/_generated_b4307834ddaa3331.spritec", "/_generated_484c63496f4b3cf.collisionobjectc" ]
+}, {
+  "path" : "/scripts/player.scriptc",
+  "hexDigest" : "c5c8d070e12eecf74ed8aec5b4b69dd261433e74",
+  "children" : [ ]
+}, {
+  "path" : "/_generated_b4307834ddaa3331.spritec",
+  "hexDigest" : "e46c36b7e21a527275d43f5e75777c760dde4c11",
+  "children" : [ "/builtins/materials/sprite.materialc", "/main/sources/player_anim.a.texturesetc" ]
+}, {
+  "path" : "/builtins/materials/sprite.materialc",
+  "hexDigest" : "b9b604f96ab19e3d7c5e0cd364fa88d19a6113fb",
+  "children" : [ "/builtins/materials/sprite.vpc", "/builtins/materials/sprite.fpc" ]
+}, {
+  "path" : "/builtins/materials/sprite.vpc",
+  "hexDigest" : "9006ee432995600a1420c99553c40439f2f43baa",
+  "children" : [ ]
+}, {
+  "path" : "/builtins/materials/sprite.fpc",
+  "hexDigest" : "d5786f4e050ba5f1a2ed82523af756e10953e256",
+  "children" : [ ]
+}, {
+  "path" : "/main/sources/player_anim.a.texturesetc",
+  "hexDigest" : "e3babeb69faefa3458ddb9c5535a02049974b18f",
+  "children" : [ "/main/sources/player_anim.texturec" ]
+}, {
+  "path" : "/main/sources/player_anim.texturec",
+  "hexDigest" : "edc9fbbeea0e94d33314999477813a75f21ab02e",
+  "children" : [ ]
+}, {
+  "path" : "/_generated_484c63496f4b3cf.collisionobjectc",
+  "hexDigest" : "ec7e6027e2aed1c6950dd823420a9af883b87b55",
+  "children" : [ ]
+}, {
+  "path" : "/_generated_8b59b8639b91869e.goc",
+  "hexDigest" : "d47292eb6459807e000c0b8e3f3d75c5520ef198",
+  "children" : [ "/_generated_80035dbd522824f4.spritec", "/_generated_e5ee6c2b4ce82af5.labelc" ]
+}, {
+  "path" : "/_generated_80035dbd522824f4.spritec",
+  "hexDigest" : "91edb43484820fb5938000bd063d4240f8be88fa",
+  "children" : [ "/builtins/materials/sprite.materialc", "/main/sources/Wallpaper.a.texturesetc" ]
+}, {
+  "path" : "/main/sources/Wallpaper.a.texturesetc",
+  "hexDigest" : "25f2ed41d5249824b90dd65f197e722dddbc4407",
+  "children" : [ "/main/sources/Wallpaper.texturec" ]
+}, {
+  "path" : "/main/sources/Wallpaper.texturec",
+  "hexDigest" : "56b414c308b8bb95632c6fe207b6fe87e38e0732",
+  "children" : [ ]
+}, {
+  "path" : "/_generated_e5ee6c2b4ce82af5.labelc",
+  "hexDigest" : "2927cfe82c5b2071f8afde50a1bb2d979b285956",
+  "children" : [ "/builtins/fonts/default.fontc", "/builtins/fonts/label-df.materialc" ]
+}, {
+  "path" : "/builtins/fonts/default.fontc",
+  "hexDigest" : "c7490a8817ebe771bf334ba755b2de1d0cd5bb3c",
+  "children" : [ "/_generated_2e9565c19ca35f02.glyph_bankc", "/builtins/fonts/font-df.materialc" ]
+}, {
+  "path" : "/_generated_2e9565c19ca35f02.glyph_bankc",
+  "hexDigest" : "b37238dd22a8066d4070c135c4e7c85ad3bb2665",
+  "children" : [ ]
+}, {
+  "path" : "/builtins/fonts/font-df.materialc",
+  "hexDigest" : "cb402dd78556910becb85dadcdb6b7d5792cb506",
+  "children" : [ "/builtins/fonts/font-df.vpc", "/builtins/fonts/font-df.fpc" ]
+}, {
+  "path" : "/builtins/fonts/font-df.vpc",
+  "hexDigest" : "ec4b312ed1a719e4cc7103d5dae2ad4d82be2e14",
+  "children" : [ ]
+}, {
+  "path" : "/builtins/fonts/font-df.fpc",
+  "hexDigest" : "72c6fa100527a8be222847e3d50c04c07af247d6",
+  "children" : [ ]
+}, {
+  "path" : "/builtins/fonts/label-df.materialc",
+  "hexDigest" : "387995424b48f23ec4be680239409be9b6756eb2",
+  "children" : [ "/builtins/fonts/font-df.vpc", "/builtins/fonts/font-df.fpc" ]
+}, {
+  "path" : "/builtins/render/default.renderc",
+  "hexDigest" : "62fcf66fed9988305fe48996f4d7693b2fac6e49",
+  "children" : [ "/builtins/render/default.render_scriptc" ]
+}, {
+  "path" : "/builtins/render/default.render_scriptc",
+  "hexDigest" : "3c032f67a986e024938dab0d18e12ef6baad94c7",
+  "children" : [ ]
+}, {
+  "path" : "/input/game.input_bindingc",
+  "hexDigest" : "b2fbb11563492cd463837ba3fae04f02671f9ec7",
+  "children" : [ ]
+}, {
+  "path" : "/builtins/input/default.gamepadsc",
+  "hexDigest" : "829295a7ab92ae9950bf28f6a881220438e258e8",
+  "children" : [ ]
+}, {
+  "path" : "/builtins/render/default.display_profilesc",
+  "hexDigest" : "4187e11a10b0dd0d7f1b34d3ae3c0e9632dc69fd",
+  "children" : [ ]
+}, {
+  "path" : "/builtins/scripts/debugger.luac",
+  "hexDigest" : "3f4ab6ed5c68d875834d9939c59ae995577f36ba",
+  "children" : [ "/builtins/scripts/edn.luac", "/builtins/scripts/mobdebug.luac" ]
+}, {
+  "path" : "/builtins/scripts/edn.luac",
+  "hexDigest" : "8829bfefec882aa5ebd15957dcc5fef65206d1b1",
+  "children" : [ ]
+}, {
+  "path" : "/builtins/scripts/mobdebug.luac",
+  "hexDigest" : "712789da6396cabc4d953a2fce8c00097f1aef57",
+  "children" : [ "/builtins/scripts/socket.luac", "/builtins/scripts/edn.luac" ]
+}, {
+  "path" : "/builtins/scripts/socket.luac",
+  "hexDigest" : "ba899e6182f5a2e4fdda6513449f31f04719e4a4",
+  "children" : [ ]
+} ]

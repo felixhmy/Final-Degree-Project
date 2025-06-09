@@ -1,0 +1,183 @@
+[gd_scene load_steps=15 format=3 uid="uid://biw8rg52qrv5f"]
+
+[ext_resource type="PackedScene" uid="uid://ba0pryxm8bhyd" path="res://Entities/Player.tscn" id="1_cgsdj"]
+[ext_resource type="Texture2D" uid="uid://bcvn2kp37rs8u" path="res://Sprites/libraries/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png" id="2_e2yjm"]
+[ext_resource type="Texture2D" uid="uid://dm8pompkcchjh" path="res://Sprites/libraries/Seasonal Tilesets/1 - Grassland/BackGround.png" id="3_qvy2j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nwway"]
+size = Vector2(576, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_486vv"]
+size = Vector2(112, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2tbjb"]
+size = Vector2(30, 14)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xqdui"]
+size = Vector2(14, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ue6e"]
+size = Vector2(46, 13.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yfhns"]
+size = Vector2(78, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ejef5"]
+size = Vector2(62, 14)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_nx3pn"]
+tile_data = PackedInt32Array(0, 589824, 3, 1, 851968, 3)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_f5xni"]
+tile_data = PackedInt32Array(0, 589824, 3, 1, 786432, 3, 2, 851968, 3)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ajr45"]
+texture = ExtResource("2_e2yjm")
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+11:1/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+11:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+15:3/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+11:4/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+11:5/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+4:8/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_3rt1u"]
+sources/0 = SubResource("TileSetAtlasSource_ajr45")
+pattern_0 = SubResource("TileMapPattern_nx3pn")
+pattern_1 = SubResource("TileMapPattern_f5xni")
+
+[node name="MainScene" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_cgsdj")]
+position = Vector2(-103, 152)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(2, 2)
+
+[node name="MarginContainer" type="MarginContainer" parent="Player/Camera2D"]
+offset_left = -285.0
+offset_top = -164.0
+offset_right = -112.0
+offset_bottom = -88.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Player/Camera2D/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Player/Camera2D/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Movement: A,D, Space
+Reset: R"
+
+[node name="Label2" type="Label" parent="Player/Camera2D/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Time: "
+
+[node name="Ground" type="StaticBody2D" parent="."]
+
+[node name="Suelo1" type="CollisionShape2D" parent="Ground"]
+position = Vector2(160, 184)
+shape = SubResource("RectangleShape2D_nwway")
+
+[node name="Suelo2" type="CollisionShape2D" parent="Ground"]
+position = Vector2(584, 185)
+shape = SubResource("RectangleShape2D_486vv")
+
+[node name="PlatMedia1" type="CollisionShape2D" parent="Ground"]
+position = Vector2(-32, 152)
+shape = SubResource("RectangleShape2D_2tbjb")
+
+[node name="PlatMedia2" type="CollisionShape2D" parent="Ground"]
+position = Vector2(0, 136)
+shape = SubResource("RectangleShape2D_2tbjb")
+
+[node name="PlatMedia3" type="CollisionShape2D" parent="Ground"]
+position = Vector2(240, 8)
+shape = SubResource("RectangleShape2D_2tbjb")
+
+[node name="PlatMedia4" type="CollisionShape2D" parent="Ground"]
+position = Vector2(160, -9)
+shape = SubResource("RectangleShape2D_2tbjb")
+
+[node name="PlatMedia5" type="CollisionShape2D" parent="Ground"]
+position = Vector2(-48, -24)
+shape = SubResource("RectangleShape2D_2tbjb")
+
+[node name="PlatPeq1" type="CollisionShape2D" parent="Ground"]
+position = Vector2(136, 119)
+shape = SubResource("RectangleShape2D_xqdui")
+
+[node name="PlatPeq2" type="CollisionShape2D" parent="Ground"]
+position = Vector2(152, 103)
+shape = SubResource("RectangleShape2D_xqdui")
+
+[node name="PlatPeq3" type="CollisionShape2D" parent="Ground"]
+position = Vector2(168, 87)
+shape = SubResource("RectangleShape2D_xqdui")
+
+[node name="PlatPeq4" type="CollisionShape2D" parent="Ground"]
+position = Vector2(-8, -9)
+shape = SubResource("RectangleShape2D_xqdui")
+
+[node name="PlatMediaGran1" type="CollisionShape2D" parent="Ground"]
+position = Vector2(56, 120)
+shape = SubResource("RectangleShape2D_1ue6e")
+
+[node name="PlatMediaGran2" type="CollisionShape2D" parent="Ground"]
+position = Vector2(248, 72.25)
+shape = SubResource("RectangleShape2D_1ue6e")
+
+[node name="PlatGrand1" type="CollisionShape2D" parent="Ground"]
+position = Vector2(72, -8.5)
+shape = SubResource("RectangleShape2D_yfhns")
+
+[node name="PlatGrand2" type="CollisionShape2D" parent="Ground"]
+position = Vector2(320, 40)
+shape = SubResource("RectangleShape2D_ejef5")
+
+[node name="TileMap" type="TileMap" parent="."]
+texture_filter = 1
+tile_set = SubResource("TileSet_3rt1u")
+format = 2
+layer_0/tile_data = PackedInt32Array(720896, 655360, 3, 720897, 655360, 3, 720898, 655360, 3, 720899, 655360, 3, 720900, 655360, 3, 720901, 655360, 3, 720902, 655360, 3, 720903, 655360, 3, 720904, 655360, 3, 720905, 655360, 3, 720906, 655360, 3, 720907, 655360, 3, 720908, 655360, 3, 720909, 655360, 3, 720910, 655360, 3, 720911, 655360, 3, 720912, 655360, 3, 720913, 655360, 3, 720914, 655360, 3, 720915, 655360, 3, 720916, 655360, 3, 720917, 655360, 3, 720918, 655360, 3, 720919, 655360, 3, 720920, 655360, 3, 720921, 655360, 3, 720922, 655360, 3, 720923, 851968, 3, 786431, 655360, 3, 786430, 655360, 3, 786429, 655360, 3, 786428, 655360, 3, 786427, 655360, 3, 786426, 655360, 3, 786425, 655360, 3, 786424, 589824, 3, 720929, 589824, 3, 720930, 655360, 3, 720931, 655360, 3, 720932, 655360, 3, 720933, 655360, 3, 720934, 655360, 3, 720935, 851968, 3, 655357, 589824, 3, 589823, 589824, 3, 655358, 851968, 3, 524288, 851968, 3, 458754, 589824, 3, 458755, 655360, 3, 458756, 851968, 3, 458760, 983040, 3, 393225, 983040, 3, 327690, 983040, 3, 262158, 589824, 3, 262159, 655360, 3, 262160, 851968, 3, 131090, 589824, 3, 131091, 786432, 3, 131092, 786432, 3, 131093, 851968, 3, 15, 851968, 3, 14, 589824, 3, -65526, 851968, 3, -65527, 589824, 3, -65530, 851968, 3, -65531, 786432, 3, -65532, 786432, 3, -65533, 786432, 3, -65534, 589824, 3, -1, 983040, 3, -65539, 851968, 3, -65540, 589824, 3)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_base_scale = Vector2(0.5, 0.5)
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Background" type="TextureRect" parent="ParallaxBackground/ParallaxLayer"]
+offset_left = -212.0
+offset_top = -374.0
+offset_right = 734.0
+offset_bottom = 332.0
+texture = ExtResource("3_qvy2j")

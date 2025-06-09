@@ -1,0 +1,9 @@
+animations {
+  id: "Wallpaper"
+  images {
+    image: "/media/library/ground/background.png"
+  }
+  playback: PLAYBACK_NONE
+  fps: 1
+}
+extrude_borders: 2
