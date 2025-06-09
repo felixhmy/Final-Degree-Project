@@ -1,4 +1,4 @@
-# Final-Degree-Project
+# Research into engines for developing 2D video games in web environments 
 
 As part of my undergraduate thesis, I conducted research comparing various game development engines for web game development.
 
